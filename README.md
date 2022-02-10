@@ -1,3 +1,3 @@
 # Excalibur-Proxy
-Effective Proxy For School\n
+Effective Proxy For School
 Homepage: https://studymath.xyz
