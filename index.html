@@ -1,0 +1,88 @@
+<html>
+  <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+    body {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/90/View_of_hillside_with_medieval_fields_system_-_geograph.org.uk_-_311358.jpg');
+      background-size: 100% 100%;
+    }
+      div[class="form"] {
+    vertical-align: middle;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.8);
+    line-height: .6em;
+    outline: none;
+      }
+
+    .blackboard {
+    
+    position: relative;
+    width: 640px;
+    height: 200px;
+    margin: 10% auto;
+    border: gold solid 2px;
+    
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    background: transparent;
+    
+}
+
+input[id=URL] {
+  	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: gold solid 10px;
+    background: yellow;
+    
+    margin-bottom: 10px;
+    font: 32px;
+    font-family: 'MedievalSharp', cursive;
+    color: black;
+    height: 45px;
+}
+div[id=main] {
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  
+}
+h1 {
+  font-family: inherit;
+  font: 50%;
+}
+    </style>
+  </head>
+  <body>
+    <script>
+      function update() {
+        var form = document.getElementById('url');
+        form.action = "/service/"+document.getElementById("myText").value;
+
+      }
+      
+      </script>
+
+      <p>
+        <div id="main">
+          <div class="blackboard">
+          <h1>EXCALIBUR</h1>
+          <form onsubmit="update()" action="/" id="url">
+        <input id="myText" type="text" placeholder="example.com" />
+            </form>
+          </div>
+          
+      </p>
+    </div>
+    
+    </form>
+  </body>
+</html>
