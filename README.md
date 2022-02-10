@@ -1,4 +1,3 @@
 # Excalibur-Proxy
-Effective Proxy For School
-#Homepage
-https://studymath.xyz
+Effective Proxy For School\n
+Homepage: https://studymath.xyz
